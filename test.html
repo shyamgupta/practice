@@ -4,54 +4,69 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		header,footer{
-			text-align: center;
+		li{
+			display: inline-block;
+			list-style-type: none;
 		}
-		.col1{
-			width: 80%;
+		body{
+			width: 90%;
+			margin: 0 auto;
+		}
+		nav{
+			background-color: yellow;
+		}
+		#main-top{
 			float: left;
+			width: 70%;
 		}
-		.col2{
-			width: 20%;
+		#main-bottom{
+			width: 70%;
+		}
+		#side{
 			float: right;
+			width: 20%;
 		}
 		.clearfix:before,
 		.clearfix:after{
 			content: "";
 			display: table;
 		}
-		.clearfix:after{clear: both;}
-		.wrapper{
-			width: 100%;
-			max-width: 80rem;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		img{
-			border-radius: 400px;
-			width: 10rem;
-			height: auto;
+		.clearfix:after{
+			clear: both;
 		}
 		footer{
-			position: fixed;
-			bottom: 0;
-			left: 50%;
-			text-align: center;
+			background-color: blue;
+			color: white;
 		}
-		
 		
 	</style>
 </head>
 <body>
-	<header><img src="./myimage.jpg" alt="my image"></header>
-	<div class="clearfix wrapper">
-		<div class="col1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-		<div class="col2">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<header>
+		<h1>CSS Layout Tutorial</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Portfolio</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="wrapper" class="clearfix">
+		<div id="main-top">
+			<h2>Subheadings are Good</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iure voluptas maxime ipsam fugiat hic quam eius eligendi qui necessitatibus, perferendis nihil ducimus, assumenda, officia nisi neque eum provident velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et nam excepturi dolore, in, doloribus sunt accusantium? Dolorum, ea perspiciatis labore omnis, tenetur cupiditate ut similique dicta. Nobis, dolorem itaque inventore.</p>
 		</div>
-		<footer><p>Thank you!</p></footer>
-		
-		
+		<div id="side">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, molestiae. Possimus quod sunt vero quisquam cupiditate voluptates. Nobis, temporibus est quasi nostrum officiis. Recusandae iure nulla, sint explicabo cumque, rerum?</p>
+		</div>
 	</div>
+	<div id="main-bottom">
+		<h2>Another Subheading</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<footer>All rights reserved</footer>
 </body>
 </html>
