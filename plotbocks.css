@@ -55,6 +55,7 @@ header{
     height: 15%;
     background-color: green;
     border: 1px solid green;
+    text-align: center;
 }
 
 #sidebar{
@@ -92,3 +93,9 @@ footer{
     clear:both;
     
 }
+p{
+    padding: 3%;
+    font-size: larger;
+    color: aliceblue;
+}
+
