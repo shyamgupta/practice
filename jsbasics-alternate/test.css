@@ -1,0 +1,80 @@
+h1{
+    line-height: 10px;
+    margin-left: 2%;
+    color:lightblue;
+    
+}
+header{
+    width: 970px;
+    border: 1px solid black;
+    background-color: red;
+    border-radius: 10px;
+}
+body{
+    background-color:darkblue;
+    position: relative;
+}
+#nav{
+    width: 250px;
+    background-color: aqua;
+    margin-top: 10px;
+    border-radius: 10px;
+    float: left;
+    
+}
+
+#home{
+    margin-left: 40px;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+#nav > ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#main{
+    height: 550px;
+    width: 700px;
+    background-color:#001f2b;
+    float: left;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+h2{
+    color: lightblue;
+}
+
+#inside-main{
+    
+    width: 90%;
+    margin: 0 auto;
+    color: lightblue;
+}
+#inside-main a{
+    color: aqua;
+}
+
+footer{
+    width: 970px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    clear:both;
+    position: fixed;
+    bottom: 20px;
+}
+footer  p{
+    line-height: 40px;
+    margin-left: 10px;
+    display: inline;
+}
+footer a{
+    display: inline;
+    color: aqua;
+}
