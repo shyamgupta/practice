@@ -1,3 +1,7 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:500');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 /*CSS Reset Begins*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -56,47 +60,52 @@ html,body{
     height: 100%;
     width: 100%;    
 }
+
 body{
-    background-color: chocolate;
+    background: radial-gradient(circle,rgb(111,89,100),rgb(94,73,83),rgb(32,15,20));
 }
+
 #wrapper{
     width: 90%;
     height: 100%;
     margin: 0 auto;
     
+    
 }
 header h1,h2{
     display: inline-block;
-    margin: 2%;
+    margin: 1%;
 }
 header h1{
     float: left;
-    font-weight: 900;
-    font-weight: bolder;
+    font-family: 'Zilla Slab', serif;
+    font-size:30px;
 }
 header h2{
     float: right;
-    font-weight: 800;
-    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 header{
     width: 100%;
     height: 10%;
-    background-color:beige;
+    background-color:rgb(247,247,247);
 }
 #myphoto{
-/*    width: 30%;*/
-    height: 30%;
-    margin: 2%;
-    border: 5px solid grey;
+    height: 29%;
+    margin: 1%;
+    border: 3px solid grey;
     float: left;
 }
 #aboutme{
-    width: 64%;
+    width: 60%;
     height: 30%;
-    margin: 2%;
-    border: 5px solid grey;
-    float: left; 
+    margin: 1%;
+    float: left;
+    background: linear-gradient(to bottom, rgb(241,235,241) 0%,rgb(239,232,238) 40%,rgb(238,231,238) 100%);
+}
+#aboutme p,a{
+    margin: 1%;
 }
 #aboutme h2{
     display: block;
@@ -104,29 +113,29 @@ header{
     margin-top: 0;
     margin-right: 0;
     height: 15%;
-    background-color: silver;
-    font-weight: 800;
-    font-weight: bolder;
+    background: linear-gradient(to bottom, rgb(160,159,167) 0%,rgb(149,147,158) 40%,rgb(177,176,180) 100%);
+    font-size: 20px;
+    color: white;
 }
 
 .portfolio{
-    width: 30%;
-    height: auto;
-    border: 5px solid grey;
-    margin: 2%;
-    clear: both;
-    background-color: silver;
+    width: 25%;
+    float: left;
+    background: linear-gradient(to bottom, rgb(241,235,241) 0%,rgb(239,232,238) 40%,rgb(238,231,238) 100%);
+    margin-left: 1%;
+    margin-bottom: 2%;
+    margin-right: 5%;
 }
-.portfolio h2{
-    display: block;
+.portheading {
     margin-left: 0;
     margin-top: 0;
     margin-right: 0;
-    height: 10%;
-    background-color:aliceblue;
-    font-weight: 800;
-    font-weight: bolder;
+    height: 20%;
+    font-size: 20px;
     padding: 0;
+    background: linear-gradient(to bottom, rgb(160,159,167) 0%,rgb(149,147,158) 40%,rgb(177,176,180) 100%);
+    color: white;
+    
 }
 .portfolio p{
     margin: 5%;
@@ -141,3 +150,28 @@ header{
     border-radius: 400px;
     margin: 2%;
 }
+button{
+    margin-left: 30%;
+    margin-bottom: 2%;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    clear:both;
+    background-color:rgb(247,247,247);
+    
+}
+footer p,img,a{
+    display: inline;
+    
+}
+footer img{
+    width: 1%;
+}
+
