@@ -6,6 +6,7 @@ function printList(array_var){
 		listHTML += '<li>'+ array_var[i] + '</li>';
 	}
 	listHTML += '</ol>';
+	document.write(listHTML);
 }
 var name = ["John","Rita","Jack","Henry"];
 printList(name);
